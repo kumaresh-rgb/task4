@@ -27,7 +27,7 @@
   align-items: center;
   margin-bottom: 30px;
   justify-content: center;
-  color: #973dc2;
+  color: #000000;
 }
 .row {
   display: flex;
@@ -52,7 +52,7 @@ button {
   outline: none;
   border: none;
   color: #fff;
-  background: #973dc2;
+  background: #000000;
   cursor: pointer;
   font-size: 16px;
 }
