@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.to-do-list {
+  background-color: white;
+  width: 100%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.to-do-list h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  color: #973dc2;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  border: none;
+  flex: 1;
+  outline: none;
+  padding: 10px;
+  font-weight: 14px;
+  background: transparent;
+}
+button {
+  padding: 16px 50px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #973dc2;
+  cursor: pointer;
+  font-size: 16px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 14px 8px 12px 50px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  background-image: url(./images/unchecked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(./images/checked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  color: #555;
+  text-align: center;
+}
+ul li span:hover {
+  background-color: #edeef0;
+}
